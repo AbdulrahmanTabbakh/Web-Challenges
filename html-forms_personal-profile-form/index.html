@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <h2>Create your Personal Profile</h2>
+    <section>
+      <form aria-labelledby="title">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="input-Fname">First Name:</label>
+          <input
+            id="input-Fname"
+            type="text"
+            name="name"
+            minlength="4"
+            required
+          />
+          <label for="input-Lname">Last Name:</label>
+          <input
+            id="input-Lname"
+            type="text"
+            name="name"
+            minlength="4"
+            required
+          />
+          <label for="input-date">Your favorite date:</label>
+          <input id="input-date" type="date" name="favorite-date" />
+        </fieldset>
+
+        <p>
+          can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset>
+          <legend>Further Information</legend>
+          <label for="input-color">Favorite Color:</label>
+          <input
+            type="color"
+            id="input-color"
+            name="colorPicker"
+            value="#E5430F"
+          />
+
+          <label for="input favorite-pet">What's your favorite pet?</label>
+          <select id="input favorite-pet" name="pets">
+            <option value="">--Please choose an option--</option>
+            <option value="Agra cadabra">Agra cadabra</option>
+            <option value="Chicken Turtle">Chicken Turtle</option>
+            <option value="Fried Egg Jellyfish">Fried Egg Jellyfish</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
